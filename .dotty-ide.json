@@ -1,0 +1,17 @@
+[ {
+  "id" : "root/compile",
+  "compilerVersion" : "0.20.0-RC1",
+  "compilerArguments" : [ "-bootclasspath", "C:\\Program Files\\Java\\jre1.8.0_201\\lib\\resources.jar;C:\\Program Files\\Java\\jre1.8.0_201\\lib\\rt.jar;C:\\Program Files\\Java\\jre1.8.0_201\\lib\\sunrsasign.jar;C:\\Program Files\\Java\\jre1.8.0_201\\lib\\jsse.jar;C:\\Program Files\\Java\\jre1.8.0_201\\lib\\jce.jar;C:\\Program Files\\Java\\jre1.8.0_201\\lib\\charsets.jar;C:\\Program Files\\Java\\jre1.8.0_201\\lib\\jfr.jar;C:\\Program Files\\Java\\jre1.8.0_201\\classes" ],
+  "sourceDirectories" : [ "D:\\YandexDisk\\DevsExercises\\AdventOfCode\\2019_Dotty\\src\\main\\scala-0.20", "D:\\YandexDisk\\DevsExercises\\AdventOfCode\\2019_Dotty\\src\\main\\scala", "D:\\YandexDisk\\DevsExercises\\AdventOfCode\\2019_Dotty\\src\\main\\java", "D:\\YandexDisk\\DevsExercises\\AdventOfCode\\2019_Dotty\\target\\scala-0.20\\src_managed\\main" ],
+  "dependencyClasspath" : [ "C:\\Users\\AlexMckey\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\lamp\\dotty-library_0.20\\0.20.0-RC1\\dotty-library_0.20-0.20.0-RC1.jar", "C:\\Users\\AlexMckey\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.1\\scala-library-2.13.1.jar" ],
+  "classDirectory" : "D:\\YandexDisk\\DevsExercises\\AdventOfCode\\2019_Dotty\\target\\scala-0.20\\classes",
+  "projectDependencies" : [ ]
+}, {
+  "id" : "root/test",
+  "compilerVersion" : "0.20.0-RC1",
+  "compilerArguments" : [ "-bootclasspath", "C:\\Program Files\\Java\\jre1.8.0_201\\lib\\resources.jar;C:\\Program Files\\Java\\jre1.8.0_201\\lib\\rt.jar;C:\\Program Files\\Java\\jre1.8.0_201\\lib\\sunrsasign.jar;C:\\Program Files\\Java\\jre1.8.0_201\\lib\\jsse.jar;C:\\Program Files\\Java\\jre1.8.0_201\\lib\\jce.jar;C:\\Program Files\\Java\\jre1.8.0_201\\lib\\charsets.jar;C:\\Program Files\\Java\\jre1.8.0_201\\lib\\jfr.jar;C:\\Program Files\\Java\\jre1.8.0_201\\classes" ],
+  "sourceDirectories" : [ "D:\\YandexDisk\\DevsExercises\\AdventOfCode\\2019_Dotty\\src\\test\\scala-0.20", "D:\\YandexDisk\\DevsExercises\\AdventOfCode\\2019_Dotty\\src\\test\\scala", "D:\\YandexDisk\\DevsExercises\\AdventOfCode\\2019_Dotty\\src\\test\\java", "D:\\YandexDisk\\DevsExercises\\AdventOfCode\\2019_Dotty\\target\\scala-0.20\\src_managed\\test" ],
+  "dependencyClasspath" : [ "D:\\YandexDisk\\DevsExercises\\AdventOfCode\\2019_Dotty\\target\\scala-0.20\\classes", "C:\\Users\\AlexMckey\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\ch\\epfl\\lamp\\dotty-library_0.20\\0.20.0-RC1\\dotty-library_0.20-0.20.0-RC1.jar", "C:\\Users\\AlexMckey\\AppData\\Local\\Coursier\\cache\\v1\\https\\repo1.maven.org\\maven2\\org\\scala-lang\\scala-library\\2.13.1\\scala-library-2.13.1.jar" ],
+  "classDirectory" : "D:\\YandexDisk\\DevsExercises\\AdventOfCode\\2019_Dotty\\target\\scala-0.20\\test-classes",
+  "projectDependencies" : [ "root/compile" ]
+} ]
