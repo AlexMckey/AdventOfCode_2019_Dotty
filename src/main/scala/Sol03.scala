@@ -1,7 +1,8 @@
 case class Pos(x: Int, y: Int)
 {
     def +(p:(Int, Int)) = Pos(x + p._1, y + p._2)
-    def manhattanDistance(other: Pos = Pos(0,0)): Int = (x - other.x).abs + (y - other.y).abs
+    def manhattanDistance(other: Pos = Pos(0,0)): Int =
+        (x - other.x).abs + (y - other.y).abs
 }
 
 object Sol03 extends App with SolInput {
@@ -9,23 +10,22 @@ object Sol03 extends App with SolInput {
     val fileName = "Sol03.txt"
     
     val wires = input(fileName)
-        .map(_.split(',')
-            .map(_.splitAt(1))
-            .map((d,cnt) => (d,cnt.toInt)))
+        .map(_.split(','))
         .toList
     
-    def partPath(part:(String, Int)) = 
-        LazyList.fill(part._2)(part._1 match {
-            case "L" => (-1,0)
-            case "R" => (1,0)
-            case "U" => (0,1)
-            case "D" => (0,-1)
-            case _ => (0,0)
-        })
+    def partPath(part: String) = {
+        val (dir, cnt) = part.splitAt(1)
+        LazyList.fill(cnt.toInt)(dir match {
+                case "L" => (-1,0)
+                case "R" => (1,0)
+                case "U" => (0,1)
+                case "D" => (0,-1)
+                case _ => (0,0)
+            })
+    }
 
     val wirePoints = wires.map(
-        _.map(partPath)
-        .flatten
+        _.flatMap(partPath)        
         .scanLeft(Pos(0,0))(_+_)
         .drop(1))
 
