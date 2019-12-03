@@ -7,7 +7,7 @@ case class Pos(x: Int, y: Int)
 
 object Sol03 extends App with SolInput {
 
-    val fileName = "Sol03.txt"
+    val fileName = "Sol03/Sol03.txt"
     
     val wires = input(fileName)
         .map(_.split(','))

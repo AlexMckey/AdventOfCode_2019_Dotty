@@ -1,6 +1,6 @@
 object Sol02 extends App with SolInput {
 
-    val fileName = "Sol02.txt"
+    val fileName = "Sol02/Sol02.txt"
     
     val program = input(fileName)
         .next

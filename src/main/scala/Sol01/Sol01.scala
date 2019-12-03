@@ -4,7 +4,7 @@ import scala.io.Source
 
 object Sol01 extends App with SolInput {
 
-    val fileName = "Sol01.txt"
+    val fileName = "Sol01/Sol01.txt"
     
     val masses = input(fileName).map(_.toInt).toList
 
