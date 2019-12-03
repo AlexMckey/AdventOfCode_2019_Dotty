@@ -2,7 +2,7 @@ import java.io.BufferedReader
 import java.io.File
 import scala.io.Source
 
-object Sol_01 extends App with SolInput {
+object Sol01 extends App with SolInput {
 
     val fileName = "Sol01.txt"
     
